@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "coldstartbench.trial.v1",
+  "trialId": "sample-tool-agent-01",
+  "createdAt": "2026-01-15T10:00:00.000Z",
+  "provenance": {
+    "target": "SampleTool 1.2.0",
+    "agent": "Example coding agent",
+    "model": "Example model",
+    "modelVersion": "example-build",
+    "systemPrompt": "Fresh context; public docs only",
+    "toolSetup": "Local isolated trial directory"
+  },
+  "tasks": [
+    { "id": "sample-app" }
+  ]
+}

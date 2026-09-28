@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "coldstartbench.report.v1",
+  "trialId": "sample-tool-agent-01",
+  "provenance": {
+    "target": "SampleTool 1.2.0",
+    "agent": "Example coding agent",
+    "model": "Example model",
+    "modelVersion": "example-build",
+    "systemPrompt": "Fresh context; public docs only",
+    "toolSetup": "Local isolated trial directory"
+  },
+  "createdAt": "2026-01-15T10:00:00.000Z",
+  "reportedAt": "2026-09-28T20:58:55.926Z",
+  "taskCount": 1,
+  "eventCount": 8,
+  "metrics": {
+    "task-start": 1,
+    "task-finish": 1,
+    "check-attempt": 0,
+    "build-attempt": 1,
+    "test-attempt": 0,
+    "test-success": 0,
+    "http-check": 1,
+    "sqlite-check": 1,
+    "browser-check": 1,
+    "restart-check": 1,
+    "screenshot": 0,
+    "repair-iteration": 1,
+    "manual-intervention": 0
+  },
+  "metricsByTask": {
+    "sample-app": {
+      "task-start": 1,
+      "task-finish": 1,
+      "check-attempt": 0,
+      "build-attempt": 1,
+      "test-attempt": 0,
+      "test-success": 0,
+      "http-check": 1,
+      "sqlite-check": 1,
+      "browser-check": 1,
+      "restart-check": 1,
+      "screenshot": 0,
+      "repair-iteration": 1,
+      "manual-intervention": 0
+    }
+  },
+  "taskElapsedSeconds": {
+    "sample-app": 50
+  },
+  "events": [
+    {
+      "timestamp": "2026-01-15T10:00:00.000Z",
+      "taskId": "sample-app",
+      "type": "task-start",
+      "detail": "Fresh attempt started"
+    },
+    {
+      "timestamp": "2026-01-15T10:00:08.000Z",
+      "taskId": "sample-app",
+      "type": "build-attempt",
+      "detail": "PASS: clean build"
+    },
+    {
+      "timestamp": "2026-01-15T10:00:12.000Z",
+      "taskId": "sample-app",
+      "type": "repair-iteration",
+      "detail": "Fixed a missing route parameter after compiler feedback"
+    },
+    {
+      "timestamp": "2026-01-15T10:00:18.000Z",
+      "taskId": "sample-app",
+      "type": "http-check",
+      "detail": "PASS: create and read returned expected data; evidence/http.json"
+    },
+    {
+      "timestamp": "2026-01-15T10:00:23.000Z",
+      "taskId": "sample-app",
+      "type": "sqlite-check",
+      "detail": "PASS: created row persisted; evidence/sqlite.json"
+    },
+    {
+      "timestamp": "2026-01-15T10:00:31.000Z",
+      "taskId": "sample-app",
+      "type": "browser-check",
+      "detail": "PASS: form submit showed confirmation; evidence/browser.png"
+    },
+    {
+      "timestamp": "2026-01-15T10:00:39.000Z",
+      "taskId": "sample-app",
+      "type": "restart-check",
+      "detail": "PASS: row remained after restart; evidence/restart.json"
+    },
+    {
+      "timestamp": "2026-01-15T10:00:50.000Z",
+      "taskId": "sample-app",
+      "type": "task-finish",
+      "detail": "Attempt complete"
+    }
+  ]
+}

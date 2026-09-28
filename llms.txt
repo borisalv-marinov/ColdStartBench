@@ -1,0 +1,10 @@
+# ColdStartBench
+
+ColdStartBench records fresh AI coding-agent trials against unfamiliar developer tools. Current v0.1 records externally executed checks; it does not run them.
+
+- Overview and quick start: [README.md](README.md)
+- AI contribution instructions and invariants: [AGENTS.md](AGENTS.md)
+- Copyable evaluator prompt: [docs/AI_USAGE.md](docs/AI_USAGE.md)
+- Complete example trial and report: [examples/clean-trial/](examples/clean-trial/)
+- CLI source entry point: [scripts/coldstartbench.mjs](scripts/coldstartbench.mjs)
+- Event and report schema: [docs/event-schema.md](docs/event-schema.md)
