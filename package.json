@@ -1,0 +1,13 @@
+{
+  "name": "coldstartbench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Record and summarize fresh AI coding agent cold-start trials",
+  "scripts": {
+    "start": "node scripts/coldstartbench.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
